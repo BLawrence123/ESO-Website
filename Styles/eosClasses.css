@@ -1,13 +1,68 @@
 body {
 	font-family: "Roboto", serif;
     font-size: 100%;
-    width: 70%;
+    width: 50%;
     margin: 0 auto;
     border: 3px solid black;
     background-image: linear-gradient(to right, grey, yellow);
     background-size: cover;
 }
+main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    grid-gap: 10px;
+    grid-template-areas: 
+    "ref1 ref2"
+    "ref3 ref4"
+    "ref5 ref6"
+    "ref7 ref8"
+    "ref9 ref10"
+    "ref11 ref12"
+    ;
+}
+.ref1 {
+    grid-area: ref1;
+}
+.ref2 {
+    grid-area: ref2;
+}
+.ref3 {
+    grid-area: ref3;
+}
+.ref4 {
+    grid-area: ref4;
+}
+.ref5 {
+    grid-area: ref5;
+}
+.ref6 {
+    grid-area: ref6;
+}
+.ref7 {
+    grid-area: ref7;
+}
+.ref8 {
+    grid-area: ref8;
+}
+.ref9 {
+    grid-area: ref9;
+}
+.ref10 {
+    grid-area: ref10;
+}
+.ref11 {
+    grid-area: ref11;
+}
+.ref12 {
+    grid-area: ref12;
+}
 
+
+
+main img {
+    max-width: 100%;
+}
 ul, ol {
     font-style: italic;
     font-size: 1.5em;
@@ -81,8 +136,12 @@ html {
     background-position: center;
 }
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 600px) {
     html {
         font-size: 70%;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
     }
 }
