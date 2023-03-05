@@ -1,0 +1,5 @@
+The 2 things I worked on was readability and accessability at lower screen sizes.
+
+To fix these problems I made the title text colors similar to eachother so that they can blend together in a more fluid manor
+
+I also made some adjustments to media queries to allow for a more usable website at smaller screen sizes
