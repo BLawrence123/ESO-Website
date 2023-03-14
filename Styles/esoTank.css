@@ -5,7 +5,7 @@ body {
     width: 50%;
     margin: 0 auto;
     border: 3px solid black;
-    background-image: linear-gradient(to right, grey, #ac87cf);
+    background-color: rgba(170,130,180,80%);
     background-size: cover;
 }
 
@@ -23,7 +23,9 @@ html {
     background-image: url(../Images/esosunspire.jpg);
     background-size: cover;
     background-position: top;
+    background-attachment: fixed;
 }
+/* Separation of text to columns */
 .left {
     max-width: 40%;
     float: left;
@@ -32,6 +34,10 @@ html {
 .right {
     max-width: 40%;
     float: right;
+}
+/* moves the link to ESO main website under the picture */
+.mainlink {
+    clear: both;
 }
 /* Nav Menu Styles*/
 #nav_menu::after {
@@ -89,10 +95,10 @@ main h2 {
 header img {
     max-width: 100%;
 }
-header a {
-    color: black;
+/*Main Styles */
+main {
+    padding: 0 1em 0 1em;
 }
-
 /*Footer Styles*/
 
 footer {
@@ -109,7 +115,18 @@ footer a {
     }
 
 }
-    
+/* Query to help phone viewers */
+@media only screen and (max-width: 500px) {
+    body {
+        font-family: "Roboto", serif;
+        font-size: 100%;
+        width: 100%;
+        margin: 0 auto;
+        border: 3px solid black;
+        background-color: rgba(170,130,180,84%);
+        background-size: cover;
+    }
+}    
 
 @media only screen and (max-width: 396px) {
     html {

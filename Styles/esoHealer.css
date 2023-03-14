@@ -1,14 +1,11 @@
 
-main>h2{
-    color: #a84232;
-}
 body {
     font-family: "Roboto", serif;
     font-size: 100%;
     width: 50%;
     margin: 0 auto;
     border: 3px solid black;
-    background-image: linear-gradient(to right, greenyellow, grey);
+    background-color: rgba(133,200,40,84%);
     background-size: cover;
 }
 
@@ -27,8 +24,10 @@ html {
     background-image: url(../Images/esoforest2.jpg);
     background-size: cover;
     background-position: left;
+    background-attachment: fixed;
     
 }
+/* Separation of text to columns */
 .left {
     max-width: 40%;
     float: left;
@@ -37,6 +36,10 @@ html {
 .right {
     max-width: 40%;
     float: right;
+}
+/* moves the link to ESO main website under the picture */
+.mainlink {
+    clear: both;
 }
 /* Nav Menu Settings */
 #nav_menu {           
@@ -82,6 +85,13 @@ html {
 header img {
     max-width: 100%;
 }
+/*Main Styles */
+main {
+    padding: 0 1em 0 1em;
+}
+main>h2{
+    color: #a84232;
+}
 /* Footer styles */
 footer {
     clear: both;
@@ -94,7 +104,18 @@ footer {
     }
 
 }
-    
+ /* Query to help phone viewers */
+@media only screen and (max-width: 500px) {
+    body {
+        font-family: "Roboto", serif;
+        font-size: 100%;
+        width: 100%;
+        margin: 0 auto;
+        border: 3px solid black;
+        background-color: rgba(133,200,40,84%);
+        background-size: cover;
+    }
+}   
 
 @media only screen and (max-width: 396px) {
     html {

@@ -2,6 +2,7 @@
 html {
     background-image: url(../Images/bestesoback.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 body {
 	font-family: "Roboto", serif;
@@ -9,7 +10,8 @@ body {
     width: 50%;
     margin: 0 auto;
     border: 3px solid black;
-    background-image: linear-gradient(to right, orange, grey);
+    /*background-image: linear-gradient(to right, orange, grey);*/
+    background-color: rgba(255, 153, 0, 80%);
     background-size: cover;
 }
 
@@ -64,8 +66,12 @@ a[href] {
 #nav_menu ul li:hover > ul {
 	display: block;
 }
+/* Main Styles */
 main h2 {
     color: black;
+}
+main {
+    padding: 0 1em 0 1em;
 }
 #p1 {
     border: black 4px solid;
@@ -76,8 +82,20 @@ main h2 {
 #p3 {
     border: black 4px solid;
 }
+/* Query to help phone viewers */
+@media only screen and (max-width: 500px) {
+    body {
+        font-family: "Roboto", serif;
+        font-size: 100%;
+        width: 100%;
+        margin: 0 auto;
+        border: 3px solid black;
+        background-color: rgba(255, 153, 0, 75%);
+        background-size: cover;
+    }
+}
 @media only screen and (max-width: 350px) {
     html {
-        font-size: 70%;
+        font-size: 50%;
     }
 }

@@ -4,7 +4,7 @@ body {
     width: 50%;
     margin: 0 auto;
     border: 3px solid black;
-    background-image: linear-gradient(to right, grey, red);
+    background-color: rgba(235,40,40, 82%);
     background-size: cover;
 }
 
@@ -19,6 +19,7 @@ ul, ol {
 a[href] {
     font-family: sans-serif;
 }
+/* Separation of text to columns */
 .left {
     max-width: 40%;
     float: left;
@@ -28,10 +29,15 @@ a[href] {
     max-width: 40%;
     float: right;
 }
+/* moves the link to ESO main website under the picture */
+.mainlink {
+    clear: both;
+}
 html {
     /* background-image: linear-gradient(to right, grey, red); */
     background-image: url(../Images/tankbackground.jpg);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 /* Nav Menu */
@@ -73,10 +79,14 @@ html {
 #nav_menu ul li:hover > ul {
 	display: block;
 }
+
+/* Main Styles */
 main h2 {
     color: whitesmoke;
 }
-
+main {
+    padding: 0 1em 0 1em;
+}
 /* Header Styles */
 header img {
     max-width: 100%;
@@ -92,7 +102,18 @@ footer {
     }
 
 }
-    
+   /* Query to help phone viewers */
+@media only screen and (max-width: 500px) {
+    body {
+        font-family: "Roboto", serif;
+        font-size: 100%;
+        width: 100%;
+        margin: 0 auto;
+        border: 3px solid black;
+        background-color: rgba(235,40,40, 82%);
+        background-size: cover;
+    }
+}   
 
 @media only screen and (max-width: 396px) {
     html {

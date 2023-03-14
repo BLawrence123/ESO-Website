@@ -4,7 +4,7 @@ body {
     width: 70%;
     margin: 0 auto;
     border: 3px solid black;
-    background-image: linear-gradient(to right, grey, yellow);
+    background-color: rgba(251, 255, 65, 82%);
     background-size: cover;
 }
 
@@ -57,7 +57,10 @@ a[href] {
 #nav_menu ul li:hover > ul {
 	display: block;
 }
-
+/* Main Styles */
+main {
+    padding: 0 1em 0 1em;
+}
 /* Section Styles */
 #tanksection {
     
@@ -74,13 +77,25 @@ header {
     color: black;
 }
 
-/* Background Colors */
+/* HTML Stlye */
 html {
     background-image: url(../Images/nordbackground.jpg);
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
-
+/* Query to help phone viewers */
+@media only screen and (max-width: 500px) {
+    body {
+        font-family: "Roboto", serif;
+        font-size: 100%;
+        width: 100%;
+        margin: 0 auto;
+        border: 3px solid black;
+        background-color: rgba(251, 255, 65, 82%);
+        background-size: cover;
+    }
+}
 @media only screen and (max-width: 400px) {
     html {
         font-size: 70%;
