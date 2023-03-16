@@ -84,6 +84,8 @@ html {
 /* Header Styles */
 header img {
     max-width: 100%;
+   
+    display: block;
 }
 /*Main Styles */
 main {

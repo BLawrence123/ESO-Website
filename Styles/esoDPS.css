@@ -90,6 +90,7 @@ main {
 /* Header Styles */
 header img {
     max-width: 100%;
+    display: block;
 }
 /* Footer styles */
 footer {

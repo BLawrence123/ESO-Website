@@ -72,11 +72,10 @@ main {
 #dpssection {
     border: black 4px solid;
 }
-/* Header Colors */
+/* Header Styles */
 header {
     color: black;
 }
-
 /* HTML Stlye */
 html {
     background-image: url(../Images/nordbackground.jpg);
